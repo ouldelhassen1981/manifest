@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <default sync-j="4" revision="kirkstone"/>
+ 
+  <remote fetch="https://github.com/linux4sam" name="linux4sam"/>
+  <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
+  <remote fetch="https://github.com/openembedded" name="oe"/>
+  <remote fetch="https://github.com/rauc" name="rauc"/>
+  <remote fetch="git@github.com" name="sam9"/>
+  
+  <project remote="sam9" name="ouldelhassen1981/meta-sam9x.git" revision="dev_med/bspsam9x" path="sources/meta-sam9x">
+        <copyfile dest="setup-environment" src="meta-sam9x/scripts/setup-environment"/>
+  </project>
+  
+  <project remote="linux4sam" name="meta-atmel" path="sources/meta-atmel"/>
+  <project remote="yocto" name="poky" path="sources/poky"/>
+  <project remote="yocto" name="meta-arm" path="sources/meta-arm"/>
+  <project remote="oe" name="meta-openembedded" path="sources/meta-openembedded"/>
+  <project remote="rauc" name="meta-rauc" path="sources/meta-rauc"/>
+</manifest>
